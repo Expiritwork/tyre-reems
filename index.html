@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tyre Reems | Premium Tyres</title>
+    <meta
+      name="description"
+      content="Tyre Reems supplies premium tyres for cars, SUVs, and performance vehicles with fast delivery and expert fitting."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="#top" aria-label="Tyre Reems home">
+          <span class="brand-mark">T</span>
+          <span>Tyre Reems</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#shop">Shop</a>
+          <a href="#features">Features</a>
+          <a href="#offers">Offers</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn-ghost" type="button">Track Order</button>
+          <button class="btn btn-primary" type="button">
+            Cart (<span id="cart-count">0</span>)
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Road-ready performance</span>
+            <h1>Better grip. Better mileage. Better drives.</h1>
+            <p class="lead">
+              Discover premium tyres for city commuting, long highway journeys, and rugged adventure driving — all engineered for safety, comfort, and confidence.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#shop">Shop now</a>
+              <button class="btn btn-secondary" type="button">Find my tyre size</button>
+            </div>
+
+            <div class="metrics">
+              <div class="metric">
+                <strong>25K+</strong>
+                <span>Tyres sold</span>
+              </div>
+              <div class="metric">
+                <strong>4.9/5</strong>
+                <span>Customer rating</span>
+              </div>
+              <div class="metric">
+                <strong>2-Day</strong>
+                <span>Fast delivery</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="showcase">
+            <div class="showcase-card">
+              <span class="badge">New arrival</span>
+
+              <div class="tyre-visual" aria-label="Featured tyre illustration">
+                <div class="wheel wheel-large"></div>
+              </div>
+
+              <div class="info-row">
+                <div>
+                  <div class="info-label">Ultra traction series</div>
+                  <div class="product-name-hero">All-Season Pro X7</div>
+                </div>
+
+                <div class="price-box">
+                  <span class="old-price">$239</span>
+                  <strong>$199</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories" id="shop">
+        <div class="container">
+          <div class="section-head">
+            <h2>Featured tyres</h2>
+          </div>
+
+          <div class="filter-pills" aria-label="Product categories">
+            <button class="pill active" type="button">All</button>
+            <button class="pill" type="button">City</button>
+            <button class="pill" type="button">SUV</button>
+            <button class="pill" type="button">Off-road</button>
+            <button class="pill" type="button">Performance</button>
+            <button class="pill" type="button">Winter</button>
+          </div>
+
+          <div class="products" id="product-grid">
+            <article class="product-card" data-category="city">
+              <div class="product-media">
+                <div class="wheel wheel-small"></div>
+              </div>
+              <div class="product-info">
+                <span class="tag">Urban</span>
+                <h3>City Glide 185/65R15</h3>
+                <div class="rating">★★★★★</div>
+                <div class="product-meta">
+                  <div class="price">$89</div>
+                  <button class="add-btn" data-name="City Glide 185/65R15" data-price="89" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="suv">
+              <div class="product-media">
+                <div class="wheel wheel-small wheel-alt"></div>
+              </div>
+              <div class="product-info">
+                <span class="tag">SUV</span>
+                <h3>Trail Edge 225/65R17</h3>
+                <div class="rating">★★★★★</div>
+                <div class="product-meta">
+                  <div class="price">$142</div>
+                  <button class="add-btn" data-name="Trail Edge 225/65R17" data-price="142" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="performance">
+              <div class="product-media">
+                <div class="wheel wheel-small wheel-warm"></div>
+              </div>
+              <div class="product-info">
+                <span class="tag">Performance</span>
+                <h3>Velocity R 245/40R18</h3>
+                <div class="rating">★★★★★</div>
+                <div class="product-meta">
+                  <div class="price">$188</div>
+                  <button class="add-btn" data-name="Velocity R 245/40R18" data-price="188" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+
+            <article class="product-card" data-category="winter">
+              <div class="product-media">
+                <div class="wheel wheel-small wheel-cool"></div>
+              </div>
+              <div class="product-info">
+                <span class="tag">Winter</span>
+                <h3>Frost Grip 205/55R16</h3>
+                <div class="rating">★★★★★</div>
+                <div class="product-meta">
+                  <div class="price">$129</div>
+                  <button class="add-btn" data-name="Frost Grip 205/55R16" data-price="129" type="button">Add</button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <div class="container">
+          <div class="section-head">
+            <h2>Why drivers choose Tyre Reems</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">✓</div>
+              <h3>Premium quality</h3>
+              <p>Built with durable compounds, road-tested grip, and longer wear life for everyday driving confidence.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">⚡</div>
+              <h3>Fast delivery</h3>
+              <p>Order before 6 PM and get dispatch on the same day, with nationwide shipping and tyre fitting support.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">🛡️</div>
+              <h3>Road safety</h3>
+              <p>Optimized tread designs improve braking, wet grip, and handling for safer journeys in all seasons.</p>
+            </article>
+          </div>
+
+          <div class="deal-banner" id="offers">
+            <div class="deal-inner">
+              <div>
+                <h3>Free fitting on 4 tyre orders</h3>
+                <p>Use code REEMS4 and save on your next upgrade.</p>
+              </div>
+              <button class="btn btn-primary" type="button">Claim offer</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop-layout" id="reviews">
+        <div class="container two-column">
+          <div class="panel">
+            <h3>Customer reviews</h3>
+
+            <div class="review-card">
+              <div class="rating">★★★★★</div>
+              <p>
+                “The grip is incredible in the rain, and the price was far better than the dealership. Delivery was quick and hassle-free.”
+              </p>
+              <div class="review-author">— Daniel M.</div>
+            </div>
+
+            <div class="review-card">
+              <div class="rating">★★★★★</div>
+              <p>
+                “Swapped to the Trail Edge tyres for my SUV and the difference in comfort is obvious. Highly recommended for highway trips.”
+              </p>
+              <div class="review-author">— Sarah L.</div>
+            </div>
+          </div>
+
+          <aside class="panel cart-panel">
+            <h3>Shopping cart</h3>
+
+            <div id="cart-items" class="cart-items">
+              <p class="empty">Your cart is empty.</p>
+            </div>
+
+            <div class="cart-total">
+              <div class="line">
+                <span>Subtotal</span>
+                <span id="subtotal">$0.00</span>
+              </div>
+              <div class="line">
+                <span>Shipping</span>
+                <span id="shipping">$0.00</span>
+              </div>
+              <div class="line total">
+                <span>Total</span>
+                <span id="total">$0.00</span>
+              </div>
+              <button class="btn btn-primary checkout" type="button">Checkout</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© 2026 Tyre Reems. Premium quality, every mile.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
